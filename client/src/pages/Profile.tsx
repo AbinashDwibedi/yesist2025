@@ -34,7 +34,8 @@ const Profile = () => {
     description: "",
   });
 
-  const [news, setNews] = useState([
+  // Removed setNews since it's not being used
+  const news = [
     {
       id: 1,
       title: "Global Warming Hits Record Highs",
@@ -56,7 +57,7 @@ const Profile = () => {
       source: "Eco Watch",
       date: "April 14, 2025",
     },
-  ]);
+  ];
 
   const handlePostChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setNewPost({ ...newPost, [e.target.name]: e.target.value });
