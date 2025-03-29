@@ -168,7 +168,7 @@ const Profile = () => {
         </div>
 
         {/* Main Content */}
-        <div className="lg:w-2/4 p-6 overflow-y-auto">
+        <div className="lg:w-2/4 p-6 overflow-y-auto max-h-screen">
           <h2 className="text-2xl font-bold mb-6">Community Posts</h2>
           <div className="space-y-4">
             {posts.map((post) => (
